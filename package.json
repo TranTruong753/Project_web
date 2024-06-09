@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Tạo web bán hàng",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
     "watch": "sass src/resources/scss:src/public/css -w",
@@ -24,7 +25,8 @@
   },
   "homepage": "https://github.com/TranTruong753/Project_web#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.2"
