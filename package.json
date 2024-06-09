@@ -1,0 +1,32 @@
+{
+  "name": "projectweb",
+  "version": "1.0.0",
+  "description": "Tạo web bán hàng",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass src/resources/scss:src/public/css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranTruong753/Project_web.git"
+  },
+  "keywords": [
+    "web",
+    "bán",
+    "hàng"
+  ],
+  "author": "Trần Quang Trường",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TranTruong753/Project_web/issues"
+  },
+  "homepage": "https://github.com/TranTruong753/Project_web#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
