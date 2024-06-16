@@ -1,0 +1,19 @@
+@use "../abstracts";
+html {
+    --text-color: #1a162e;
+    --body-bg: #f6f6f6;
+    --header-bg-color: #eee;
+
+    --icon-color: brightness(0) saturate(100%) invert(8%) sepia(10%)
+        saturate(4042%) hue-rotate(212deg) brightness(90%) contrast(95%);
+
+    --top-act-group-bg-color: #fff;
+    --top-act-group-shadow: rgba(237, 237, 246, 0.2);
+    --top-act-user-shadow: rgba(0, 0, 0, 0.08);
+    --top-act-group-separate: #ededf6;
+
+    @include abstracts.screen(lg) {
+        --header-bg-color: #fff;
+        --header-shadow-color: rgba(237, 237, 246, 0.2);
+    }
+}

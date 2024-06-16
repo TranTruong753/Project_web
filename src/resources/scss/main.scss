@@ -1,5 +1,5 @@
 @use "./base";
+@use "./theme";
+@use "./layout";
+@use "./components";
 
-h1 {
-    color: red;
-}
