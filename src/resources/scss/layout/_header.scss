@@ -6,20 +6,40 @@
 
 header {
     background: var(--header-bg-color);
+    @include abstracts.screen(lg) {
+        box-shadow: 0px 20px 60px 10px var(--header-shadow-color);
+    }
 }
 
 .top-bar {
     @extend %flexItemsCenter;
 
-    padding: 20px 0; 
+    padding: 20px 0;
+    
+    @include abstracts.screen(md) {
+        justify-content: space-between;
+        padding: 16px 0; 
+     }
 
     &__more {
-        display: none;     
+        display: none;
+        
+        @include abstracts.screen(lg) {
+            display: block;
+        }
     }
 }
 
 .navbar {
     margin-left: 114px;
+
+    @include abstracts.screen(xl) {
+        margin-left: 50px;
+    }
+
+    @include abstracts.screen(lg) {
+        display: none;
+    }
 
     &__list {
         @extend %flexItemsCenter;
@@ -44,7 +64,9 @@ header {
     margin-left: auto;
     column-gap: 20px;
 
-  
+    @include abstracts.screen(md) {
+        margin-left: 0;
+    }
 
     &__group {
         @extend %flexItemsCenter;
@@ -55,6 +77,16 @@ header {
         border-radius: 8px;
         background: var(--top-act-group-bg-color);
         box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow); 
+        
+        @include abstracts.screen(md) {
+            display: none;
+        }
+    }
+
+    &__group--single {
+        @include abstracts.screen(lg) {
+            display: none;
+        }
     }
 
     &__group--single &__btn {

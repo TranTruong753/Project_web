@@ -6,8 +6,22 @@
 
     column-gap: 14px;
 
+    @include abstracts.screen(lg) {
+        gap: 10px;
+        margin-left: 40px;
+    }
+
+    @include abstracts.screen(md) {
+        margin-left: 0;
+    }
+
+
     &__img {
-        width: 32px;        
+        width: 32px; 
+        
+        @include abstracts.screen(lg) {
+            width: 24px;
+        }
     }
 
     &__title {
@@ -15,5 +29,9 @@
         font-weight: 700;
         line-height: 145.455% ;
         color: var(--text-color);
+
+        @include abstracts.screen(lg) {
+            font-size: 1.8rem;
+        }
     }
 }
