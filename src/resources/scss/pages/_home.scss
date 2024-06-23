@@ -1,0 +1,11 @@
+@use "../abstracts";
+
+.home {
+    &__container {
+        margin-top: 40px;
+
+        @include abstracts.screen(md) {
+            margin-top: 30px;
+        }
+    }
+}
