@@ -1,4 +1,20 @@
-<nav id="navbar" class="navbar">
+<nav id="navbar" class="navbar hide">
+    <button class="navbar__close-btn js-toggle d-none d-lg-block"  toggle-target = "#navbar">
+        <img src="./icon/arrow-left.svg" alt="" class="icon">
+    </button>
+
+    <a href="#!" class="nav-btn d-none d-md-flex">
+        <img src="./icon/buy.svg" alt="" class="nav-btn__icon icon">
+        <span class="nav-btn__title">Card</span>
+        <span class="nav-btn__qnt">3</span>
+    </a>
+
+    <a href="#!" class="nav-btn d-none d-md-flex">
+        <img src="./icon/heart.svg" alt="" class="nav-btn__icon icon">
+        <span class="nav-btn__title">Favorite</span>
+        <span class="nav-btn__qnt">3</span>
+    </a>
+
     <ul class="navbar__list js-dropdown-list">
         <li class="navbar__item">
             <a href="#!" class="navbar__link">
@@ -10,7 +26,7 @@
                     <div class="top-menu">
                         <div class="top-menu__main">
                             <div class="menu-column">
-                                <div class="menu-column__icon">
+                                <div class="menu-column__icon d-lg-none">
                                     <img
                                         src="./img/category/cate-1.1.svg"
                                         alt=""
@@ -23,7 +39,7 @@
                                     />
                                 </div>
                                 <div class="menu-column__content">
-                                    <h2 class="menu-column__heading">All Departments</h2>
+                                    <h2 class="menu-column__heading d-lg-none">All Departments</h2>
                                     <ul class="menu-column__list js-menu-list">
                                         <li class="menu-column__item">
                                             <a href="#!" class="menu-column__link">Savings & Featured Shops</a>
@@ -4494,3 +4510,4 @@
         </li>
     </ul>
 </nav>
+<div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
