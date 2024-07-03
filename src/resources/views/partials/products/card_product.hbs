@@ -1,0 +1,22 @@
+<div class="col"> 
+    <article class="product-card">
+        <div class="product-card__img-wrap">
+            <a href="#!">
+                <img src="{{url}}" alt="" class="product-card__thumb">
+            </a>
+            <button class="like-btn {{#if isLike}} like-btn--liked {{/if}} product-card__like-btn">
+                <img src="./icon/heart.svg" alt="" class="like-btn__icon icon">
+                <img src="./icon/heart-red.svg" alt="" class="like-btn__icon--liked">
+            </button>
+        </div>
+        <h3 class="product-card__title">
+            <a href="#!">{{name}}</a>
+        </h3>
+        <p class="product-card__brand">{{brand}}</p>
+        <div class="product-card__row">
+            <span class="product-card__price">{{price}}</span>
+            <img src="./icon/star.svg" alt="" class="product-card__star">
+            <span class="product-card__score">{{score}}</span>
+        </div>
+    </article>
+</div>
